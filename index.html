@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + TS</title>
+
+  <link rel="stylesheet" href="src/css//main.css">
+  <script type="module" src="/src/main.ts" defer></script>
+
+</head>
+
+<body>
+  <div class="container mx-auto">
+    <div id="app"></div>
+  </div>
+
+  <template id="content_template">
+    <form id="content_form" class="w-6/12 mx-auto">
+      <div class="mt-3">
+        <label class="block text-lg" for="title">Title</label>
+        <input
+          class="w-full block p-2 px-3 border rounded focus:outline-none focus:border-teal-300 transition-colors duration-300"
+          type="text" name="title" id="title">
+      </div>
+
+      <div class="mt-3">
+        <label class="block text-lg" for="description">Description</label>
+        <textarea
+          class="w-full block p-2 px-3 border rounded focus:outline-none focus:border-teal-300 transition-colors duration-300"
+          type="text" name="description" id="description"></textarea>
+      </div>
+
+      <div class="mt-3">
+        <label class="block text-lg" for="people">People</label>
+        <input
+          class="w-full block p-2 px-3 border rounded focus:outline-none focus:border-teal-300 transition-colors duration-300"
+          type="number" name="people" id="people">
+      </div>
+
+      <button
+        class="w-full mt-4 py-2 text-lg px-8 bg-teal-500 rounded text-white bg-tran transition-colors duration-300 hover:bg-teal-600 focus:outline-teal-700"
+        type="submit">Save</button>
+    </form>
+  </template>
+
+  <template id="project_list_template">
+    <div class="w-6/12 mx-auto mt-5">
+      <h2>List template</h2>
+    </div>
+  </template>
+</body>
+
+</html>
